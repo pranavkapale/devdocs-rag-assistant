@@ -13,6 +13,7 @@ class Settings:
     llm_api_base: str = os.getenv("LLM_API_BASE", "https://api.openai.com/v1")
     llm_api_key: str = os.getenv("LLM_API_KEY", "")
     llm_model: str = os.getenv("LLM_MODEL", "gpt-4o-mini")
+    mcp_base_url: str = os.getenv("MCP_BASE_URL", "http://localhost:8001")
     top_k: int = 5
     chunk_size: int = 800
     chunk_overlap: int = 200

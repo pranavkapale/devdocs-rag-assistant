@@ -6,7 +6,7 @@ from .ingestion import build_chunks
 from .vector_store import get_vector_store
 from .rag_pipeline import answer_question
 
-app = FastAPI(title="DevDocs RAG Assistant")
+app = FastAPI(title="DataDevDocs RAG Assistant")
 
 app.add_middleware(
     CORSMiddleware,
